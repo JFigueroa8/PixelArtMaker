@@ -9,11 +9,11 @@ function makeGrid() {
   // remove previous grid if it exists
   parent.innerHTML = "";
   
-  for (var row = 1; row <= width.value; row++) {
+  for (var row = 1; row <= height.value; row++) {
     var tr = document.createElement('tr')
     parent.appendChild(tr);
     tr.id = "row" + row;
-    for (var col = 1; col <= height.value; col++) {
+    for (var col = 1; col <= width.value; col++) {
       var td = document.createElement('td');
       tr.appendChild(td);
       td.className = "row" + row + "col" + col;
